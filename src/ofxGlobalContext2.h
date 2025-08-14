@@ -9,7 +9,11 @@
 #define GlobalContext2_h
 #include <type_traits>
 #include <typeinfo>
+
+#ifndef _WIN32
 #include <cxxabi.h>
+#endif
+
 #include <string>
 #include <stdlib.h>
 #include <map>
